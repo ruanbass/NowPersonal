@@ -16,7 +16,7 @@ public class PerfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
-
+        // o cadastro de usuario e de personal  ia reusar o codigo de telas por isso q so fiz 1
         mcadastroAluno = (Button) findViewById(R.id.cadastroAluno);
         mcadastroAluno.setOnClickListener(new View.OnClickListener() {
             @Override
