@@ -1,11 +1,31 @@
 <resources>
-    <string name="app_name">NowPersonal</string>
-
-    <!-- Strings related to login -->
-    <string name="error_invalid_email">Este endereço de e-mail é inválido</string>
-    <string name="no_register_email">Este endereço de e-mail não está cadastrado</string>
-    <string name="error_invalid_password">Esta senha é muito curta</string>
-    <string name="error_incorrect_password">A senha está incorreta</string>
-    <string name="error_field_required">Este campo é necessário</string>
-
+    <string name="app_name">Now Personal</string>
+    <string name="register">Cadastro</string>
+    <string name="enter">Login</string>
+    <string name="slide_01_title">Bem - vindo</string>
+    <string name="slide_01_subtitle">O mais rápido e eficiente aplicativo de personais para smartphones já criados</string>
+    <string name="slide_02_title">Encontrar um personal mudou</string>
+    <string name="slide_02_subtitle">Encontre um personal na sua área ou em qualquer lugar, com apenas um toque</string>
+    <string name="slide_03_title">Entre em contato apenas com um toque</string>
+    <string name="slide_03_subtitle">Encontrou o personal mais próximo ideal, entre em contato para saber mais sobre os serviços</string>
+    <string name="title_activity_login_register">@string/app_name</string>
+    <string name="hint_mail">Email</string>
+    <string name="hint_password">Senha</string>
+    <string name="remember_password">Esqueci minha senha</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_import_fb">Importar do Facebook</string>
+    <string name="you_personal">Você é personal?</string>
+    <string name="btn_register">Cadastrar</string>
+    <string name="hint_phone">Telefone</string>
+    <string name="hint_calendar">Data de nascimento</string>
+    <string name="hint_city">Cidade</string>
+    <string name="point_of_care">Local de atendimento</string>
+    <string name="text_our">às</string>
+    <string name="hint_price">Preço</string>
+    <string name="hint_our_start">Horário de início</string>
+    <string name="hint_our_end">Horário de término</string>
+    <string name="hint_cref">Número CREF</string>
+    <string name="hint_name">Nome</string>
+    <string name="hint_lastname">Sobrenome</string>
+    <string name="hint_bairro">Bairro</string>
 </resources>

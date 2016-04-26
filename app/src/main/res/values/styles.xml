@@ -2,16 +2,16 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/md_yellow_500</item>
-        <item name="colorPrimaryDark">@color/md_yellow_700</item>
-        <item name="colorAccent">@color/md_red_500</item>
-        <item name="colorControlHighlight">@color/md_blue_500_25</item>​
-        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorPrimary">@color/md_amber_700</item>
+        <item name="colorPrimaryDark">@color/md_amber_900</item>
+        <item name="colorAccent">@color/md_amber_A700</item>
+        <item name="colorControlHighlight">@color/md_amber_500_50</item>​
+        <item name="colorControlNormal">@color/md_white_1000</item>
         <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
         <item name="android:colorForeground">@color/md_black_1000_75</item>
         <item name="windowActionModeOverlay">true</item>
-        <item name="actionModeBackground">@color/md_blue_500</item>
-        <item name="android:colorBackground">@color/md_black_1000</item>
+        <item name="actionModeBackground">@color/md_amber_A400</item>
+        <item name="android:colorBackground">@color/md_white_1000</item>
         <item name="android:textColorPrimary">@color/md_text</item>
         <item name="android:textColorSecondary">@color/md_secondary_text_icons</item>
         <item name="android:textColorTertiary">@color/md_disabled_hint_text</item>
@@ -20,12 +20,20 @@
         <item name="android:textColorTertiaryInverse">@color/md_disabled_hint_text_white</item>
         <item name="android:cacheColorHint">@color/md_divider</item>
         <item name="android:windowBackground">@color/md_white_1000</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">@color/md_amber_A400</item>
+        <item name="strokeColor">@color/md_amber_200</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">3dp</item>
+    </style>
 
 </resources>

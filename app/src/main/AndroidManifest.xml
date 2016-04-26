@@ -2,24 +2,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.ufpb.nowpersonal">
 
+    <!-- NORMALS PERMISSIONS -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- DANGEROUS PERMISSIONS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:name=".NowPersonalApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ico"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".acitivity.SplashActivity">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".acitivity.LoginActivity" />
-        <activity android:name=".acitivity.CadastroActivity" />
-        <activity android:name=".acitivity.PerfilActivity" />
-        <activity android:name=".acitivity.BuscaActivity"></activity>
+        <activity
+            android:name=".activities.SlideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginRegisterActivity"
+            android:label="@string/title_activity_login_register"
+            android:parentActivityName=".activities.SlideActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.ufpb.nowpersonal.activities.SlideActivity" />
+        </activity>
+        <activity android:name=".activities.MainActivity"></activity>
     </application>
 
 </manifest>
