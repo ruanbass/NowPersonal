@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.SlideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewPager"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/pageIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            app:centered="true"
+            app:theme="@style/AppTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_button_height"
+                android:padding="@dimen/min_margin"
+                android:layout_marginLeft="@dimen/min_margin"
+                android:text="@string/register"
+                android:id="@+id/register"
+                android:background="@drawable/raised_button_amber"
+                android:textColor="@color/md_text_white"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_button_height"
+                android:text="@string/enter"
+                android:id="@+id/enter"
+                android:padding="@dimen/min_margin"
+                android:layout_marginLeft="@dimen/min_margin"
+                android:background="@drawable/raised_button_amber"
+                android:textColor="@color/md_text_white"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

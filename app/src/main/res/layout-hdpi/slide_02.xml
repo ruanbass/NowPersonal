@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/default_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/size_circle_splash"
+        android:layout_height="@dimen/size_circle_splash"
+        android:src="@drawable/ic_location"
+        android:id="@+id/circle_splash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <br.com.ufpb.nowpersonal.util.RobotoMediumFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:gravity="center"
+        android:text="@string/slide_02_title"
+        android:textColor="@color/md_text"
+        android:textSize="@dimen/fontsize_title" />
+
+    <br.com.ufpb.nowpersonal.util.RobotoRegularFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_margin"
+        android:gravity="center"
+        android:text="@string/slide_02_subtitle"
+        android:textColor="@color/md_secondary_text_icons"
+        android:textSize="@dimen/fontsize_subhead" />
+
+</LinearLayout>
